@@ -1,0 +1,22 @@
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.0\forwardDojo.csprojAssemblyReference.cache
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.0\forwardDojo.csproj.CoreCompileInputs.cache
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.0\forwardDojo.AssemblyInfoInputs.cache
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.0\forwardDojo.AssemblyInfo.cs
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.0\forwardDojo.deps.json
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.0\forwardDojo.runtimeconfig.json
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.0\forwardDojo.runtimeconfig.dev.json
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.0\forwardDojo.dll
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.0\forwardDojo.pdb
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.0\forwardDojo.dll
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.0\forwardDojo.pdb
+C:\Users\mdchf\Desktop\Coding Dojo\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.0\forwardDojo.deps.json
+C:\Users\mdchf\Desktop\Coding Dojo\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.0\forwardDojo.runtimeconfig.json
+C:\Users\mdchf\Desktop\Coding Dojo\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.0\forwardDojo.runtimeconfig.dev.json
+C:\Users\mdchf\Desktop\Coding Dojo\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.0\forwardDojo.dll
+C:\Users\mdchf\Desktop\Coding Dojo\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.0\forwardDojo.pdb
+C:\Users\mdchf\Desktop\Coding Dojo\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.0\forwardDojo.csprojAssemblyReference.cache
+C:\Users\mdchf\Desktop\Coding Dojo\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.0\forwardDojo.csproj.CoreCompileInputs.cache
+C:\Users\mdchf\Desktop\Coding Dojo\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.0\forwardDojo.AssemblyInfoInputs.cache
+C:\Users\mdchf\Desktop\Coding Dojo\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.0\forwardDojo.AssemblyInfo.cs
+C:\Users\mdchf\Desktop\Coding Dojo\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.0\forwardDojo.dll
+C:\Users\mdchf\Desktop\Coding Dojo\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.0\forwardDojo.pdb

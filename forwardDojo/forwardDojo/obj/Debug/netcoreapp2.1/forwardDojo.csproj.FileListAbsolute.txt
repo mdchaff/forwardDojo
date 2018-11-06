@@ -1,0 +1,14 @@
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.1\forwardDojo.deps.json
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.1\forwardDojo.runtimeconfig.json
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.1\forwardDojo.runtimeconfig.dev.json
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.1\forwardDojo.dll
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\bin\Debug\netcoreapp2.1\forwardDojo.pdb
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.1\forwardDojo.csprojAssemblyReference.cache
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.1\forwardDojo.csproj.CoreCompileInputs.cache
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.1\forwardDojo.RazorAssemblyInfo.cache
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.1\forwardDojo.RazorAssemblyInfo.cs
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.1\forwardDojo.AssemblyInfoInputs.cache
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.1\forwardDojo.AssemblyInfo.cs
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.1\forwardDojo.RazorTargetAssemblyInfo.cache
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.1\forwardDojo.dll
+C:\Users\mdchf\Desktop\forwardDojo\forwardDojo\obj\Debug\netcoreapp2.1\forwardDojo.pdb

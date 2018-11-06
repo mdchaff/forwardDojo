@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css" />
+
+    
+    <style>
+        html, body {
+            height: 100%;
+            background: #CBBB9A url("../img/docks.jpg"); /* repeat; */
+            background-repeat:no-repeat;
+            background-size:cover;
+            overflow:auto;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            
+            
+            font-family: 'Arvo', serif;
+            font-size: 12px;
+            color: #545454;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+            /* text-transform: uppercase; */
+            font-weight: 300;
+            font-family: 'Arvo', serif;
+        }
+
+        h2 {
+            padding: 0px 0px 20px 0px;
+            font-size: 1.50em;
+        }
+
+        p, ol, ul {
+            margin-top: 0px;
+        }
+
+        p {
+            line-height: 180%;
+        }
+
+        strong {
+            color: #2C2C2C;
+        }
+
+        a {
+            color: #2C2C2C;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a img {
+            border: none;
+        }
+
+        img.border {
+        }
+
+        img.alignleft {
+            float: left;
+        }
+
+        img.alignright {
+            float: right;
+        }
+
+        img.aligncenter {
+            margin: 0px auto;
+        }
+
+        hr {
+            display: none;
+        }
+
+        /** WRAPPER */
+
+        #wrapper {
+            overflow: hidden;
+            width: 1200px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.3);
+            /* border-radius: 12px; */
+            box-shadow: 0px 0px 10px 5px rgba(0,0,0,.2);
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0px auto;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        /** HEADER */
+
+        #header {
+            overflow: hidden;
+            height: 150px;
+            /* background: url("../img/img01.jpg") repeat-x left top; */
+            background-color: rgba(11, 10, 85, 0.4);
+        }
+
+        /* Logo */
+
+        #logo
+        {
+            float: left;
+            width: 350px;
+            padding: 30px 0px 0px 50px;
+            /* text-transform: uppercase; */
+        }
+
+        #logo h1
+        {
+            padding: 5px 10px 0px 0px;
+        }
+
+        #logo h1 a
+        {
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: 300;
+            color: #FFFFFF;
+        }
+
+        #logo p
+        {
+            display: block;
+            margin-top: -10px;
+            padding: 0px 0px 0px 0px;
+            letter-spacing: 1px;
+            font-size: 1.2em;
+            color: #FFFFFF;
+        }
+
+        #logo p a
+        {
+            color: #FFFFFF;
+        }
+
+        /* Menu */
+
+        #menu
+        {
+            float: right;
+            width: 700px;
+            padding: 60px 50px 0px 0px;
+        }
+
+        #menu ul
+        {
+            float: right;
+            margin: 0;
+            padding: 0px 0px 0px 0px;
+            list-style: none;
+            line-height: normal;
+        }
+
+        #menu li
+        {
+            float: left;
+        }
+
+        #menu a
+        {
+            display: block;
+            margin-left: 1px;
+            padding: 7px 0px 7px 30px;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 300;
+            color: #FFFFFF;
+        }
+
+        #menu a:hover, #menu .current_page_item a
+        {
+            text-decoration: none;
+            border-radius: 5px;
+            color: #FFFFFF;
+        }
+
+        /** PAGE */
+
+        #page {
+            overflow: hidden;
+            width: 1100px;
+            margin: 0px 50px;
+            padding: 50px 0px;
+            border-bottom: 1px solid #DEDEDE;
+        }
+
+        #page h2 {
+        }
+
+        /** CONTENT */
+
+        #content {
+            /* float: right; */
+            width: 100%;
+            display: inline-block;
+        }
+
+        /** SIDEBAR */
+
+        #sidebar {
+            float: left;
+            width: 300px;
+        }
+
+        /* Footer */
+
+        #footer {
+            overflow: hidden;
+            margin: 0px 50px;
+            padding: 30px 0px;
+            border-top: 5px solid #000000;
+        }
+
+        #footer p {
+            text-align: center;
+            font-size: 12px;
+        }
+
+        #footer a {
+            color: #545454;
+        }
+
+        /* Three Column */
+
+        #three-column {
+            overflow: hidden;
+            margin: 0px 50px;
+            padding: 50px 0px;
+        }
+
+        #three-column #tbox1 {
+            float: left;
+            width: 300px;
+            margin-right: 50px;
+        }
+
+        #three-column #tbox2 {
+            float: left;
+            width: 400px;
+        }
+
+        #three-column #tbox3 {
+            float: right;
+            width: 300px;
+        }
+
+        /* List Style 1 */
+
+        ul.style1 {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        ul.style1 li {
+            padding: 10px 0px 15px 0px;
+            border-top: 1px solid #DEDEDE;
+        }
+
+        ul.style1 a {
+            text-decoration: none;
+            color: #545454;
+        }
+
+        ul.style1 a:hover {
+            text-decoration: underline;
+        }
+
+        ul.style1 .first {
+            padding-top: 0px;
+            border-top: none;
+        }
+
+
+        /* List style 2 */
+
+        ul.style2 {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            color: #373737;
+        }
+
+        ul.style2 li {
+            padding: 25px 0px 15px 0px;
+            border-top: 1px solid #DEDEDE;
+            color: #373737;
+        }
+
+        ul.style2 .first {
+            padding-top: 0px;
+            border-top: none;
+            color: #373737;
+        }
+
+        ul.style2 h3 {
+            padding: 0px 0px 10px 0px;
+            color: #373737;
+        }
+
+        ul.style2 h3 a {
+            text-transform: none;
+            color: #373737;
+            color: #373737;
+        }
+
+        ul.style2 a {
+            text-decoration: none;
+            color: #919191;
+            color: #373737;
+        }
+
+        ul.style2 a:hover {
+            text-decoration: underline;
+            color: #373737;
+        }
+
+        /* Button Style 1 */
+
+        .button-style {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 7px 20px;
+            background: #333;
+            border-radius: 5px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+    /* ================= TABLE STYLE ================= */
+        .companyName{
+            background-color: rgba(8, 8, 8, 0.616);
+            color: whitesmoke;
+        }
+        .button3 {
+            width: 80px;
+            background-color: rgba(255,255,255,0.3);
+            margin-bottom: 5px;
+            color: black; 
+            border: 2px solid #352d2d;
+            display: inline-block;
+        }
+        table{
+            width:100%;
+            table-layout: fixed;
+            color: #373737;
+        }
+        .tbl-header{
+            background-color: rgba(255,255,255,0.3);
+        }
+        .tbl-content{
+            height:300px;
+            overflow-x:auto;
+            margin-top: 0px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        tr{
+            outline: solid 1px;
+        }
+        th{
+            padding: 20px 15px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 12px;
+            color: #373737;
+            text-transform: uppercase;
+        }
+        td{
+            padding: 15px;
+            text-align: center;
+            vertical-align:middle;
+            font-weight: 300;
+            font-size: 12px;
+            color: #373737;
+            border-bottom: solid 1px rgba(255,255,255,0.1);
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        } 
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        } 
+        ::-webkit-scrollbar-thumb {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        }
+    </style>
+    <style>
+        .aboutUs {
+            display: inline-block;
+            height: 550px;
+            width: 28%;
+            padding: 1%;
+            margin-right:1%;
+            border: 1px solid black;
+            align-content: center;
+            color: black;
+            vertical-align: top;
+            font-style: bold;
+        }
+        .aboutUs h1{
+            margin-left: 53px;
+        } 
+        .PhotosA{
+            background: url("../img/amanda.jpg"); /* repeat; */
+            
+            background-repeat:no-repeat;
+            background-size:cover; 
+            height: 200px;
+            width: 200px;
+            padding-left: 35%;
+            color: whitesmoke;
+        }
+        .PhotosB{
+            background: url("../img/michael.jpg"); /* repeat; */
+            background-repeat:no-repeat;
+            background-size:cover; 
+            height: 200px;
+            width: 200px;
+            padding-left: 35%;
+            color: whitesmoke;
+        }
+        .PhotosC{
+            background: url("../img/phil.jpg"); /* repeat; */
+            background-repeat:no-repeat;
+            background-size:cover; 
+            height: 200px;
+            width: 200px;
+            padding-left: 35%;
+            color: whitesmoke;
+        }
+    </style>
+
+</head>
+
+
+<body>
+<div id="wrapper">
+    <div id="header">
+        <div id="logo">
+            <h1><a href="Dashboard">Forward Dojo</a></h1>
+
+            <!-- =================================================================================== -->
+            <p>Designed by.... <a href="http://templated.co" rel="nofollow">Coding Dojo's Best</a></p>
+            <!-- =================================================================================== -->
+
+
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="Dashboard" accesskey="1" title="">Homepage</a></li>
+                <li><a href="MyPage" accesskey="2" title="">My Page</a></li>
+            </ul>
+
+        </div>
+    </div>
+	<div id="page"> 
+		<div id="content">
+            
+            <div class='aboutUs'>
+                <h1>Amanda Malamis</h1>
+                <div class="PhotosA"></div>
+                <br>                
+                <p><a href="https://www.linkedin.com/in/amanda-malamis/" class="button-style">LinkedIn</a></p>
+                <p><b>Amanda co-founded forwardDojo in 2004 and is currently in her final year of study on the Creative Media Technology course at Leeds Beckett University and is with us on a part-time basis whilst she completes her studies. She believes that when creating websites that form should always follow function.<br>You could describe Amanda as a geek, into tech, obscure movies and gaming. But she has a soft side, being besotted with her cavachon puppy Molly.</b></p>
+            </div>
+            
+            <div class='aboutUs'>
+                <h1>Michael Chaffer</h1>
+                <div class="PhotosB"></div>
+                <br>                
+                <p><a href="https://www.linkedin.com/in/michael-chaffer-063209a1/" class="button-style">LinkedIn</a></p>
+                <p><b>Mike Started forwardDojo in 2004 and a highly skilled visual designer with an extensive background in service design for online health services. He brings a freshness and clarity of vision to everything he does with expertise in both visual design, information design and user-centred design processes.<br>You could describe Mike as a non-fiction book-lover, inspired bin-the-recipe cook, sans serif font aficionado and eternal seeker of inspiration.</b></p>
+            </div>
+           
+           <div class='aboutUs'>
+               <h1>Phil McCormick</h1>
+               <div class="PhotosC"></div>
+               <br>               
+                <p><a href="https://www.linkedin.com/in/phillipmccormick/" class="button-style">LinkedIn</a></p>
+                <p><b>Phil co-founded forwardDojo in 2004 and now guides the company’s technical direction. As an expert in usability and user centred design, he has led large-scale UX projects, focussing on speed of innovation, usability and service design in the NHS and other public sectors.<br>You could describe Phil as a mountain biker, road cyclist, outdoor pursuits instructor and owner of a dog called Surprise.</b></p>
+            </div>
+           
+           
+            
+        </div>
+
+
+	</div>
+	<div id="three-column">
+		<div id="tbox1">
+			<h2>Company</h2>
+			<ul class="style1">
+				<li class="first"><a href="#">Pellentesque consectetuer gravida blandit.</a></li>
+				<li><a href="#">Lorem consectetuer adipiscing elit.</a></li>
+				<li><a href="#">Maecenas vitae vitae feugiat eleifend.</a></li>
+				<li><a href="#">Pellentesque consectetuer gravida blandit.</a></li>
+			</ul>
+		</div>
+		<div id="tbox2">
+			<h2>Title</h2>
+			<p>Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio vel elit.</p>
+			<p><a href="#" class="button-style">Read More</a></p>
+		</div>
+		<div id="tbox3">
+			<h2>Upload Date</h2>
+			<ul class="style1">
+				<li class="first"><a href="#">Twitter</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Flickr</a></li>
+				<li><a href="#">Google +</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+	</div>
+</div>
+</body>
+</html>

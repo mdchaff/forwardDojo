@@ -1,0 +1,140 @@
+@model User
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="~/css/styles.css"/>
+
+
+<!Doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registration Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<a href="/test"><button>Test</button></a>
+	<div id="myWrapper">
+		<div class="container">
+			<br><br><br><br>
+			<header class="heading"> Login</header><hr></hr>
+			<div class="row ">
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-xs-15">
+							<label id="regErrorsLong">@ViewBag.LogErrors</label><br>
+						</div>
+					</div>
+				</div>
+					
+				<form asp-action="Login" asp-controller="Home" method="POST">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<label class="mail" >Your Email :</label></div>
+							<div class="col-xs-8">	 
+								<input asp-for="Email" type="email" name="Email"  id="email"placeholder="Email" class="form-control" ><br>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<label class="pass">Password :</label>
+							</div>
+							<div class="col-xs-8">
+								<input asp-for="Password" type="password" name="Password" id="password" placeholder="Password" class="form-control"><br>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="col-sm-12">
+							<input type="submit" class="btn btn-warning" value="Login">
+								<br>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="container">
+			<header class="heading"> Register</header><hr></hr>
+			<div class="row ">
+				<form asp-action="Register" asp-controller="Home" method="POST">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<label class="firstname">First Name :<span id="regErrors" asp-validation-for="FirstName">@ViewBag.FirstNameErrors</span></label>
+							</div>
+							<div class="col-xs-8">
+								<input asp-for="FirstName" type="text" name="FirstName" id="fname" placeholder="First Name" class="form-control"><br>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<label class="lastname">Last Name :<span id="regErrors" asp-validation-for="LastName">@ViewBag.LastNameErrors</span></label>
+							</div>
+							<div class ="col-xs-8">	 
+								<input asp-for="LastName" type="text" name="LastName" id="lname" placeholder="Last Name" class="form-control last"><br>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<label class="mail" >Your Email :<span id="regErrors" asp-validation-for="Email">@ViewBag.EmailErrors</span></label>
+							</div>
+							<div class="col-xs-8">	 
+								<input asp-for="Email" type="email" name="Email"  id="email"placeholder="Email" class="form-control" ><br>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<label class="pass">Password :<span id="regErrors" asp-validation-for="Password">@ViewBag.PasswordErrors</span></label>
+							</div>
+							<div class="col-xs-8">
+								<input asp-for="Password" type="password" name="Password" id="password" placeholder="Password" class="form-control"><br>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<label class="pass">Password :<span id="regErrors" asp-validation-for="PasswordC">@ViewBag.PasswordCErrors</span></label>
+							</div>
+							<div class="col-xs-8">
+								<input asp-for="PasswordC" type="password" name="PasswordC" id="password" placeholder="Confirm Password" class="form-control"><br>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-xs-15">
+								<label id="regErrorsLong">@ViewBag.PasswordLongErrors</label><br>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-12">
+						<div class="col-sm-12">
+							<input type="submit" class="btn btn-warning" value="Register"><br>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>		
+</html>
+	 
+	 
